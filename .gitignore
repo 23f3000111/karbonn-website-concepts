@@ -1,0 +1,9 @@
+# Published to GitHub Pages: only the chooser, the two sites and shared assets.
+KARBONN 3D HD QUALITY IMAGES/
+tools/
+docs/
+.superpowers/
+.playwright-mcp/
+*.log
+Thumbs.db
+.DS_Store

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Shop all products — Karbonn</title>
+  <script>!function(h){h.classList.add('js');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){h.classList.add('motion-pending');if(sessionStorage.getItem('k-nav')==='1')h.classList.add('is-arriving');setTimeout(function(){if(!h.classList.contains('has-motion'))h.classList.remove('motion-pending','is-arriving')},2500)}}catch(e){}}(document.documentElement)</script>
+  <link rel="stylesheet" href="../shared/fonts/fonts.css">
+  <link rel="stylesheet" href="../shared/vendor/lenis.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="shop">
+  <div id="site-annc"></div>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero" data-intro>
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg><span>Shop</span></nav>
+        <h1 data-shop-title>All products</h1>
+        <p data-shop-lead>Smartphones, 4G feature phones, smart TVs and home appliances, made for India.</p>
+      </div>
+      <img class="page-hero__art" src="../shared/img/zenz-pro/duo-lying.webp" alt="" aria-hidden="true">
+    </section>
+
+    <div class="container">
+      <div class="toolbar">
+        <div class="tabs" role="tablist" aria-label="Categories" data-shop-pills></div>
+        <div class="toolbar__right">
+          <span class="count" data-shop-count></span>
+          <label><span class="sr-only">Availability</span>
+            <select class="input select" data-shop-avail>
+              <option value="all">All availability</option>
+              <option value="in-stock">In stock</option>
+              <option value="coming-soon">Coming soon</option>
+            </select></label>
+          <label><span class="sr-only">Sort</span>
+            <select class="input select" data-shop-sort>
+              <option value="featured">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+              <option value="name">Name</option>
+            </select></label>
+        </div>
+      </div>
+      <div class="grid-4 shop-grid" data-render="shop"></div>
+    </div>
+
+    <section class="section--tight" style="padding-top:0">
+      <div class="container">
+        <div class="cta-band" data-reveal="up">
+          <span class="cta-band__glow"></span>
+          <div><span class="eyebrow" style="color:#FF5A63">Karbonn Klinic</span><h2 style="margin-top:14px">Service that is never far away.</h2><p>500+ service centres, doorstep pickup and drop, and a helpline that answers.</p></div>
+          <div class="cta-band__actions"><a class="btn btn--red" href="support.html#finder" data-magnetic>Find a centre</a><a class="btn btn--light" href="support.html#pickup">Book a pickup</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../shared/vendor/gsap.min.js"></script>
+  <script src="../shared/vendor/ScrollTrigger.min.js"></script>
+  <script src="../shared/vendor/lenis.min.js"></script>
+  <script src="../shared/data/icons.js"></script>
+  <script src="../shared/data/logo.js"></script>
+  <script src="../shared/data/products.js"></script>
+  <script src="../shared/js/common.js"></script>
+  <script src="../shared/js/motion.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

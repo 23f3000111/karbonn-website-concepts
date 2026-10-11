@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Website concepts | Karbonn</title>
+  <link rel="stylesheet" href="shared/fonts/fonts.css">
+  <style>
+    :root {
+      --ink: #0D0D0F; --muted: #66676D; --line: #E8E6E3; --mist: #F4F3F1; --blush: #FDEBEC; --red: #E10613;
+      --display: 'Instrument Serif', Georgia, serif; --sans: 'Geist', -apple-system, 'Segoe UI', sans-serif; --mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+      --ease: cubic-bezier(.16, 1, .3, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: var(--ink); font: 400 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: clip; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    h1, h2 { margin: 0; font-family: var(--display); font-weight: 400; letter-spacing: -0.02em; line-height: 1; text-wrap: balance; }
+    p, li { text-wrap: pretty; }
+    p { margin: 0; }
+    .wrap { width: min(1240px, calc(100% - 80px)); margin: 0 auto; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 34px 0 0; }
+    header .logo { width: 140px; height: auto; color: var(--red); }
+    .tag { font: 500 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .intro { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: end; padding: 72px 0 56px; }
+    h1 { font-size: 104px; line-height: .9; letter-spacing: -0.03em; }
+    h1 em { color: var(--red); }
+    .intro p { font-size: 19px; color: #2B2B30; }
+    .intro p + p { margin-top: 14px; color: var(--muted); font-size: 16px; }
+    .concepts { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-bottom: 72px; }
+    .concept { position: relative; display: flex; flex-direction: column; border-radius: 28px; background: var(--mist); overflow: hidden; transition: transform .6s var(--ease), box-shadow .6s var(--ease); }
+    .concept:hover { transform: translateY(-8px); box-shadow: 0 50px 80px -50px rgba(0, 0, 0, .45); }
+    .concept--b { background: var(--blush); }
+    .concept__shot { margin: 22px 22px 0; border-radius: 16px; overflow: hidden; aspect-ratio: 16 / 10; box-shadow: 0 24px 50px -30px rgba(0, 0, 0, .45); background: #fff; }
+    .concept__shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 1.2s var(--ease); }
+    .concept:hover .concept__shot img { transform: scale(1.04); }
+    .concept__body { padding: 30px 34px 34px; display: flex; flex-direction: column; flex: 1; }
+    .concept__label { display: flex; justify-content: space-between; align-items: center; }
+    .concept__label span:first-child { font: 500 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+    .concept__label span:last-child { font: 500 13px/1 var(--mono); color: var(--muted); }
+    .concept h2 { font-size: 64px; margin: 16px 0 10px; }
+    .concept p { color: #2B2B30; }
+    .concept ul { margin: 20px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .concept li { position: relative; padding-left: 22px; font-size: 15.5px; color: #2B2B30; }
+    .concept li::before { content: ''; position: absolute; left: 2px; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
+    .open { display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; margin-top: 28px; height: 54px; padding: 0 26px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 500; transition: background-color .35s var(--ease); white-space: nowrap; }
+    .concept:hover .open { background: var(--red); }
+    .open svg { width: 18px; height: 18px; transition: transform .45s var(--ease); }
+    .concept:hover .open svg { transform: translateX(5px); }
+    .notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 40px 0 72px; border-top: 1px solid var(--line); }
+    .notes strong { display: block; font: 400 30px/1.1 var(--display); margin-bottom: 8px; }
+    .notes p { color: var(--muted); font-size: 15.5px; }
+    footer { display: flex; justify-content: space-between; align-items: center; padding: 24px 0 34px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+    footer [data-credit] { color: var(--ink); font-weight: 500; }
+    .rise { opacity: 0; transform: translateY(26px); animation: rise 1s var(--ease) forwards; }
+    .rise:nth-child(2) { animation-delay: .12s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .rise { opacity: 1; transform: none; animation: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg class="logo" viewBox="168 149 906 152" role="img" aria-label="Karbonn"><g fill="currentColor" id="logo-paths"></g></svg>
+      <span class="tag">Website concepts · October 2026</span>
+    </header>
+
+    <main id="main">
+      <section class="intro">
+        <h1>Two ways to bring the next <em>Kamaal</em> online.</h1>
+        <div>
+          <p>Karbonn is coming back with ZenZ, ZenZ Pro and a new 4G range. These two concepts show how the website could put every product centre stage.</p>
+          <p>Both run offline in the browser. Click through every page, product and form.</p>
+        </div>
+      </section>
+
+      <section class="concepts" aria-label="Concepts">
+        <a class="concept rise" href="site-a-store/index.html">
+          <div class="concept__shot"><img src="shared/img/concepts/site-a.webp" alt="Concept A home page: Karbonn Store"></div>
+          <div class="concept__body">
+            <div class="concept__label"><span>Concept A</span><span>5 pages · 11 products</span></div>
+            <h2>The Store</h2>
+            <p>A clean, premium storefront that sells every day: phones, TVs and appliances in one place.</p>
+            <ul>
+              <li>Mega menu, instant search and a working bag with checkout</li>
+              <li>Product pages with colour swatches, memory options and specs</li>
+              <li>Karbonn Klinic finder, pickup booking and support</li>
+            </ul>
+            <span class="open">Open the Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="concept concept--b rise" href="site-b-launch/index.html">
+          <div class="concept__shot"><img src="shared/img/concepts/site-b.webp" alt="Concept B home page: Karbonn Launch"></div>
+          <div class="concept__body">
+            <div class="concept__label"><span>Concept B</span><span>5 pages · 11 products</span></div>
+            <h2>The Launch</h2>
+            <p>A bold, cinematic launch experience built to make ZenZ Pro the talk of India.</p>
+            <ul>
+              <li>Live colour switcher and 3D phone that follows the cursor</li>
+              <li>Stacking product cards, pinned range scroll and drawn callouts</li>
+              <li>Launch sign-ups on every page, ready for the big reveal</li>
+            </ul>
+            <span class="open">Open the Launch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </section>
+
+      <section class="notes" aria-label="What is inside">
+        <div><strong>Real Karbonn content</strong><p>Products, specs, prices, leadership, offices and service facts from Karbonn sources and retail listings.</p></div>
+        <div><strong>Built to impress</strong><p>Smooth scrolling, scroll-driven animation and page transitions, tuned for desktop screens.</p></div>
+        <div><strong>Ready to grow</strong><p>Product data lives in one file, so new launches, prices and colours go live in minutes.</p></div>
+      </section>
+    </main>
+
+    <footer><span>Prepared for Karbonn Mobiles</span><span data-credit></span><span>Private preview, not for distribution</span></footer>
+  </div>
+
+  <script src="shared/data/logo.js"></script>
+  <script src="shared/data/products.js"></script>
+  <script src="shared/js/common.js"></script>
+  <script>
+    (function () {
+      var g = document.getElementById('logo-paths');
+      (window.KARBONN_LOGO ? window.KARBONN_LOGO.paths : []).forEach(function (p) {
+        var el = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        el.setAttribute('d', p.d);
+        if (p.evenodd) el.setAttribute('fill-rule', 'evenodd');
+        g.appendChild(el);
+      });
+      K.credit(document);
+      K.noOrphans(document);
+    })();
+  </script>
+</body>
+</html>
