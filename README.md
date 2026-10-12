@@ -46,7 +46,7 @@ site-a-store/         Concept A: index, shop, product, about, support
 site-b-launch/        Concept B: index, range, product, story, support
 shared/data/          products.js (all content), icons.js, logo.js
 shared/img/           optimised product, brand and people images (WebP)
-shared/fonts/         self-hosted fonts (Source Serif 4, Outfit, Instrument Serif, Geist)
+shared/fonts/         self-hosted fonts (Source Serif 4, Outfit, Bebas Neue, Instrument Serif, Geist)
 shared/vendor/        GSAP, ScrollTrigger and Lenis (local copies, licences in LICENSES.txt)
 shared/js/            common.js (helpers), motion.js (animation engine)
 tools/                image pipeline and automated checks
